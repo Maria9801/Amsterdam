@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Tyre" content="title/html; charset=UTF-8">
+	<meta http-equiv="Content-Tyre" content="services/html; charset=UTF-8">
+    <meta http-equiv="Content-Tyre" content="about_us/html; charset=UTF-8">
+	<title>Салон красоты Амстердам</title>
+	<link rel="stylesheet"  href="css/style4.css">
+</head>
+<body>
+	<header id="header" class="header">
+		<div class="container">
+			<div class="nav">
+				<ul class="menu">
+					<li> 
+						<a onclick="javascript:history.back(); return false;">Назад</a>
+					</li>
+					<li> 
+						<a href="#offer">Онланй - запись</a>
+			</div>
+		</div>
+	</header>
+<!------------------------------------------------------------------------>		
+	<div  id="offer" class="offer">
+		<div class="master">
+			<p>Выберите матера:</p>
+			<select class="choice" mame="master">
+				<option value="Anna">Мастер Анна</option>
+				<option value="Snezhanna">Мастер Снежанна</option>
+				<option value="Kristina">Мастер Кристина</option>
+			</select>
+		</div>
+
+		<div class="servis">
+			<p>Выберите услугу:</p>
+			<select class="choice" mame="servis">
+				<option value="servis">Мастер Анна</option>
+				<option value="Snezhanna">Мастер Снежанна</option>
+				<option value="Kristina">Мастер Кристина</option>
+			</select>
+		</div>
+
+		<div class="date">
+			<p>Выберите подходящую дуту и время:</p>
+			<div class="button">
+				<a href="#">Выбрать дату</a>
+			</div>
+		</div>
+
+		<div class="nam">
+			<p>Введите Ваше имя:</p>
+			<input class="name" name="name" />
+		</div>
+
+		<div class="number">
+			<p>Введите Ваш номер телефона:</p>
+			<input class="tel" name="tel" />
+		</div>
+
+		<div class="coment">
+			<p>Комментарии:</p>
+			<textarea name="text" cols="80" rows="10"></textarea>
+		</div>
+	</div>
+<!------------------------------------------------------------------------>		
+	<section id="about" class="about">
+		<div class="agreement">
+			<a href="#"><input type="checkbox" name="a" value="yas">Я принимаю условия пользовательского соглашения</a>
+		</div>
+			<div class="agreement">
+			<a href="#"><input type="checkbox" name="a" value="yas">Я соглашаюсь с тем, как будут обрабатываеться мои персональные данные</a>
+		</div>
+		<div class="online_recording">
+			<a href="#">Записатьтся</a>
+		</div>
+	</section>
+<script src="js/record.js"></script>	
+</body>
+</html>
