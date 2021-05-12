@@ -6,8 +6,13 @@
 	<meta http-equiv="Content-Tyre" content="title/html; charset=UTF-8">
 	<meta http-equiv="Content-Tyre" content="services/html; charset=UTF-8">
     <meta http-equiv="Content-Tyre" content="about_us/html; charset=UTF-8">
+    <meta http-equiv="Content-Tyre" content="dete/html; charset=UTF-8">
 	<title>Салон красоты Амстердам</title>
 	<link rel="stylesheet"  href="css/style4.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/i18n/jquery-ui-i18n.min.js"></script>
 </head>
 <body>
 	<header id="header" class="header">
@@ -24,46 +29,88 @@
 	</header>
 <!------------------------------------------------------------------------>		
 	<div  id="offer" class="offer">
-		<div class="master">
-			<p>Выберите матера:</p>
-			<select class="choice" mame="master">
-				<option value="Anna">Мастер Анна</option>
-				<option value="Snezhanna">Мастер Снежанна</option>
-				<option value="Kristina">Мастер Кристина</option>
-			</select>
-		</div>
+		<form action="" method="POST">
+			<div class="master">
+				<p>Выберите мастера и услугу:</p>
+				<select class="choice" mame="master" >
+					<option value="Anna">Мастер Анна - Комбинированный маникюр </option>
+					<option value="Anna">Мастер Анна - Комбинированный педикюр </option>
+					<option value="Anna">Мастер Анна - Комбинированный педикюр + покрытие гель-лаком </option>
+					<option value="Anna">Мастер Анна - Обработка пальчиков + гель-лак </option>
+					<option value="Anna">Мастер Анна - Снятие гель-лака </option>
+					<option value="Anna">Мастер Анна - Наращивание </option>
+					<option value="Anna">Мастер Анна - Коррекция </option>
+					<option value="Anna">Мастер Анна - Французкий дизайн </option>
 
-		<div class="servis">
-			<p>Выберите услугу:</p>
-			<select class="choice" mame="servis">
-				<option value="servis">Мастер Анна</option>
-				<option value="Snezhanna">Мастер Снежанна</option>
-				<option value="Kristina">Мастер Кристина</option>
-			</select>
-		</div>
+					<option value="Snezhanna">Мастер Снежанна - Стрижка женская</option>
+					<option value="Snezhanna">Мастер Снежанна - Стрижка мужская</option>
+					<option value="Snezhanna">Мастер Снежанна - Стрижка чёлки</option>
+					<option value="Snezhanna">Мастер Снежанна - Стрижка бороды</option>
+					<option value="Snezhanna">Мастер Снежанна - Детская стрижка (любой возрост)</option>
+					<option value="Snezhanna">Мастер Снежанна - Окрашивание волос</option>
+					<option value="Snezhanna">Мастер Снежанна - Сложное окрашивание</option>
+					<option value="Snezhanna">Мастер Снежанна - Мелирование</option>
+					<option value="Snezhanna">Мастер Снежанна - Химическая завивка</option>
+					<option value="Snezhanna">Мастер Снежанна - Выпримление волос</option>
+					<option value="Snezhanna">Мастер Снежанна - Выпримление чёлки</option>
+					<option value="Snezhanna">Мастер Снежанна - Укладка</option>
+					<option value="Snezhanna">Мастер Снежанна - Чистка кожи головы</option>
+					<option value="Snezhanna">Мастер Снежанна - SPA процедуры</option>
 
-		<div class="date">
-			<p>Выберите подходящую дуту и время:</p>
-			<div class="button">
-				<a href="#">Выбрать дату</a>
+
+					<option value="Kristina">Мастер Кристина - Стрижка женская</option>
+					<option value="Kristina">Мастер Кристина - Стрижка мужская</option>
+					<option value="Kristina">Мастер Кристина - Стрижка чёлки</option>
+					<option value="Kristina">Мастер Кристина - Детская стрижка (любой возрост)</option>
+					<option value="Kristina">Мастер Кристина - Окрашивание волос</option>
+					<option value="Kristina">Мастер Кристина - Сложное окрашивание</option>
+					<option value="Kristina">Мастер Кристина - Мелирование</option>
+					<option value="Kristina">Мастер Кристина - Химическая завивка</option>
+					<option value="Kristina">Мастер Кристина - Выпримление волос</option>
+					<option value="Kristina">Мастер Кристина - Чистка кожи головы</option>
+					<option value="Kristina">Мастер Кристина - SPA процедуры</option>
+
+					<option value="Kristina">Мастер Кристина - Ноги полностью</option>
+					<option value="Kristina">Мастер Кристина - Ноги до колена</option>
+					<option value="Kristina">Мастер Кристина - Глкбокое бикини</option>
+					<option value="Kristina">Мастер Кристина - Классическое бикини</option>
+					<option value="Kristina">Мастер Кристина - Руки полностю</option>
+					<option value="Kristina">Мастер Кристина - Руки до локтя</option>
+					<option value="Kristina">Мастер Кристина - Подмышки</option>
+					<option value="Kristina">Мастер Кристина - Верхняя губа</option>
+					<option value="Kristina">Мастер Кристина - Щеки</option>
+					<option value="Kristina">Мастер Кристина - Подбородок</option>
+					<option value="Kristina">Мастер Кристина - Живот полностью</option>
+					<option value="Kristina">Мастер Кристина - Поясница</option>
+					<option value="Kristina">Мастер Кристина - Живот полностью</option>
+				</select>
+			</div>
+
+			<div class="date">
+				<p>Введите желаемую дуту и время:</p>
+					<input class="dat" name="date" placeholder="Введите дату" />
+			</div>
+
+			<div class="nam">
+				<p>Введите Ваше имя:</p>
+				<input class="name" name="name" placeholder="Ваше имя" />
+			</div>
+
+			<div class="number">
+				<p>Введите Ваш номер телефона:</p>
+				<input class="tel" name="tel" placeholder="Введите номер" />
+			</div>
+
+			<div class="coment">
+				<p>Комментарии:</p>
+				<textarea name="text" cols="80" rows="10"></textarea>
+			</div>
+			<div class="coments">
+				<p>Комментарии:</p>
+				<textarea name="text" cols="60" rows="10"></textarea>
 			</div>
 		</div>
-
-		<div class="nam">
-			<p>Введите Ваше имя:</p>
-			<input class="name" name="name" />
-		</div>
-
-		<div class="number">
-			<p>Введите Ваш номер телефона:</p>
-			<input class="tel" name="tel" />
-		</div>
-
-		<div class="coment">
-			<p>Комментарии:</p>
-			<textarea name="text" cols="80" rows="10"></textarea>
-		</div>
-	</div>
+	</form>
 <!------------------------------------------------------------------------>		
 	<section id="about" class="about">
 		<div class="agreement">
@@ -76,6 +123,7 @@
 			<a href="#">Записатьтся</a>
 		</div>
 	</section>
-<script src="js/record.js"></script>	
+	</form>
+<script src="js/deter.js"> </script>
 </body>
 </html>
