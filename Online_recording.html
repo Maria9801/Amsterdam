@@ -32,7 +32,7 @@
 			<div class="form_item">
 				<div class="form_label">Выберите мастера и услугу:</div>
 					<select class="select" mame="master" >
-						<option> </option>
+						<option aria-placeholder="Выберите мастера и услугу:"> </option>
 						<option value="Anna">Мастер Анна - Комбинированный маникюр </option>
 						<option value="Anna">Мастер Анна - Комбинированный педикюр </option>
 						<option value="Anna">Мастер Анна - Комбинированный педикюр + покрытие гель-лаком </option>
@@ -85,12 +85,12 @@
 					</select>
 				</div>
 				<div class="form_item">
-					<label for="form_date" class="form_label">Введите желаемую дату и время:</label>
-					<input id="form_date" type="text" name="date" class="form_input _req">
+					<label for="form_date" class="form_label">Введите желаемую дату и время*:</label>
+					<input id="form_date" type="text" name="date"  maxlength="11" placeholder="дд.мм час:мин" class="form_input _req">
 				</div>
 				<div class="form_item">
 					<label for="form_phone" class="form_label">Введите Ваш номер телефона*:</label>
-					<input id="form_phone" type="text" name="phone" class="form_input _req">
+					<input id="form_phone" type="text"   placeholder="89323422323" name="phone" class="form_input _req ">
 				</div>
 				<div class="form_item">
 					<label for="form_name" class="form_label">Введите Ваше имя*:</label>
