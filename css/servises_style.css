@@ -1,0 +1,795 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	color: black;
+    text-decoration: none;
+}
+html {
+	scroll-behavior: smooth;
+	height: 100%;
+}
+  
+body {
+	margin: 0;
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	background-color: #f3f7fb;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+	padding: 0;
+	margin: 0;
+}
+
+ul, li{
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+header{
+	background-color: #97beff2e;
+}
+/**************************************************/
+
+.container{
+	width: 1000px;
+	border: 0px dashed red;
+	margin: 0 auto;
+}
+.menu{
+	display: flex;
+}
+.menu li a {
+	text-decoration: none;
+	font-size: 18px;
+}
+/**************************************************/
+.menu a:after {
+	display: block; 
+	content: ""; 
+	height: 1px; 
+	width: 0%; 
+	background-color: #000000;
+	transition: width 0.2s ease-in-out; 
+}
+.menu a:hover:after {
+	width: 100%;
+
+}
+
+/**************************************************/
+.tel{
+	font-size: 18px;
+}
+.nav .tel{
+	margin-left: 30px;
+	width: 200px;
+}
+
+.nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 50px;
+}
+.nav a{
+ 	width: 250px;
+}
+.nav li{
+	margin-right: 50px;
+
+}
+/**************************************************/
+.offer {
+	width: 1170px;
+	height: 500px;
+	margin: 0 auto;
+}
+
+.containerr {
+ 	position: relative;
+  	top: 84px;
+ 	width: 100%;
+}
+.containerr img {
+  	width: 100%;
+  	height: auto;
+}
+button{
+	padding: 0;
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+}
+button a{
+	padding: 0;
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+}
+
+.button_1 {
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	transform: translate(-109%, 10%);
+	color: black;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 3px 0px 0px 3px;;
+	text-align: center;
+	background: white;
+	transition: background-color 1s ease 0s ;
+
+}
+.button_1:hover {
+	color: white;
+	background-color: black;
+}
+
+.button_2 {
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	transform: translate( -10%, 10%);
+	color: black;
+	font-size: 20px;
+	border-radius: 0px;
+	text-align: center;
+	background: white;
+	transition: background-color 1s ease 0s ;
+
+}
+.button_2:hover {
+	color: white;
+	background-color: black;
+}
+.button_3 {
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	transform: translate( 89%, 10%);
+	color: black;
+	font-size: 20px;
+	border-radius: 0px 3px 3px 0px;
+	text-align: center;
+	background: white;
+	transition: background-color 1s ease 0s ;
+
+}
+.containerr .button_3:hover {
+	color: white;
+	background-color: black;
+}
+.button_1:focus{
+	outline: black;
+}
+.button_2:focus{
+	outline: none;
+}
+.button_2:focus{
+	outline: none;
+}
+button {
+	width: 300px;
+	height: 47px;
+	cursor: pointer;
+	outline: none;
+	transition: background-color 1s ease 0s ;
+}
+button a{
+	width: 300px;
+	height: 47px;
+	cursor: pointer;
+	outline: none;
+	transition: background-color 1s ease 0s ;
+}
+button#btn_s.btn_s{
+	width: 100px;
+	height: 47px;
+	padding: 0;
+	cursor: pointer;
+	outline: none;
+	transition: background-color 1s ease 0s;
+}
+.btn_s{
+	position: absolute;
+	color: black;
+	font-size: 20px;
+	padding: 12px 20px;
+	outline: none;
+	cursor: pointer;
+	border-radius: 0px;
+	text-align: center;
+	background: white;
+}
+.btn_s:hover {
+	color: white;
+	background-color: black;
+}
+button#btn_k.btn_k{
+	width: 100px;
+	height: 47px;
+	padding: 0;
+	cursor: pointer;
+	outline: none;
+	transition: background-color 1s ease 0s;
+}
+
+.btn_k{
+	position: absolute;
+	color: black;
+	left: 38%;
+	font-size: 20px;
+	padding: 12px 20px;
+	outline: none;
+	cursor: pointer;
+	border-radius: 0px;
+	text-align: center;
+	background: white;
+}
+.btn_k:hover {
+	color: white;
+	background-color: black;
+}
+button#btn_snej.btn_snej{
+	width: 100px;
+	height: 47px;
+	padding: 0;
+	cursor: pointer;
+	outline: none;
+	transition: background-color 1s ease 0s;
+}
+.btn_snej{
+	position: absolute;
+	color: black;
+	font-size: 20px;
+	padding: 12px 20px;
+	outline: none;
+	cursor: pointer;
+	border-radius: 0px;
+	text-align: center;
+	background: white;
+}
+.btn_snej:hover {
+	color: white;
+	background-color: black;
+}
+button#btn_kris.btn_kris{
+	width: 100px;
+	height: 47px;
+	padding: 0;
+	cursor: pointer;
+	outline: none;
+	transition: background-color 1s ease 0s;
+}
+
+.btn_kris{
+	position: absolute;
+	color: black;
+	left: 38%;
+	font-size: 20px;
+	padding: 12px 20px;
+	outline: none;
+	cursor: pointer;
+	border-radius: 0px;
+	text-align: center;
+	background: white;
+}
+.btn_kris:hover {
+	color: white;
+	background-color: black;
+}
+button#btn.btn{
+	width: 100px;
+	height: 47px;
+	padding: 0;
+	cursor: pointer;
+	outline: none;
+	transition: background-color 1s ease 0s;
+}
+.btn{
+	position: absolute;
+	color: black;
+	font-size: 20px;
+	padding: 12px 20px;
+	outline: none;
+	cursor: pointer;
+	border-radius: 0px;
+	text-align: center;
+	background: white;
+}
+.btn:hover {
+	color: white;
+	background-color: black;
+}
+.btn_sh{
+	position: absolute;
+	color: black;
+	font-size: 20px;
+	padding: 12px 20px;
+	outline: none;
+	cursor: pointer;
+	border-radius: 0px;
+	text-align: center;
+	background: white;
+}
+.btn_sh:hover {
+	color: white;
+	background-color: black;
+}
+button:focus{
+	color: white;
+	background-color: black;
+}
+button a:focus{
+	color: white;
+	background-color: black;
+} 
+
+
+
+/**************************************************/
+section{
+	width: 1170px;
+	margin: 0 auto;
+}
+.price1{
+	display: none;
+}
+.price2{
+	display: none;
+}
+.price3{
+	display: none;
+}
+.price4{
+	display: none;
+}
+.title{
+
+	margin-bottom: 50px;
+	font-size: 40px;
+	text-align: left;
+
+	overflow: hidden;
+}
+.title:after {
+    margin-right: -100%;
+    right: -300px;
+}
+.title:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    height: 5px;
+    background-color: #e2ecfc;
+    position: relative;
+}
+/**************************************************/ 
+table{
+	width: 100%;
+	height: 30%;
+}
+td {
+	border: 2px solid black;
+	width: 80%;
+	padding: 20px;
+	padding-left: 30px;
+}
+.mani{
+	border: 2px solid black;
+	background-color: #F3F9FF;
+	width: 50%;
+	text-align: center;
+}
+
+.button a{
+    box-shadow: 1px 1px 10px 5px rgb(136 136 136 / 50%);
+    margin-top: 30px;
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding: 17px 47px;
+    border-radius: 10px;
+    border: 2px solid #759EDF;
+    width: 195px;
+    transition: all 0.5s ease;
+    color: #104A83;
+	
+}
+.button a:hover{
+	box-shadow: 1px 1px 10px 1px rgb(136 136 136 / 10%);
+}
+	
+/**************************************************/ 
+.container p{
+	text-align: center;
+	font-size: 18px;
+}
+.footer{
+	margin-top: 50px;
+	display: flex;
+    height: 90px;
+    background-color: #97beff2e;
+    flex-direction: column;
+    justify-content: center;
+}
+ /**************************************************/ 
+  .open_meenu{
+	display: none;
+	background: none;
+	border: none;
+ }
+
+ .header .menu_showw {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+ }
+ .header .menu_showw li {
+	margin: 2px;
+}
+/**************************************************/ 
+@media all and (max-width: 1200px) {
+	.btn_k {
+		left: 30%;
+	}
+	section{
+		width: 1000px;
+	}
+	.container {
+	    width: 1000px;
+	}
+
+    .offer {
+	    width: 1000px;
+	}
+	.containerr .button_1 {
+	    padding: 10px 0px;
+	}
+	.containerr .button_2 {
+	    padding: 10px 0px;;
+	}
+	.containerr .button_3 {
+	    padding: 10px 0px;
+	}
+	.button_1 {
+	    transform: translate( -110%, 0%);
+	}
+	.button_2 {
+	    transform: translate( -20%, 0%);
+	}
+	.button_3 {
+	    transform: translate( 80%, 0%);
+	}	
+}
+@media all and (max-width: 1000px){
+	.menu {
+		display: flex;
+		margin-left: 0px;
+		align-items: center;
+	}
+	.menu li a {
+		font-size: 14px;
+	}
+	.tel{
+		font-size: 14px;
+	}
+	.nav .tel {
+		margin-left: 0px;
+		width: 150px;
+	}
+	.nav li{
+		width: 50px;
+		margin-right: 50px;
+	}
+	.container {
+		width: 700px;
+	}
+	/**************************************************/
+	section{
+		width: 700px;
+	}
+	.offer {
+		width: 700px;
+	}
+	section{
+		width: 700px;
+	}
+	.button_1   {
+	    transform: translate( -90%, -10%);
+	    width:260px;
+	}
+	.button_2 {
+	    transform: translate( 17%, -10%);
+	    width:150px;
+	}
+	.button_3 {
+	    transform: translate( 87%, -10%);
+	    width:200px;
+	}
+    button{
+    	width:150px;
+    }
+	.btn_k {
+		left: 45%;
+	}
+}
+@media all and (max-width: 700px){
+	.menu  {
+		display: none;
+  	}
+  	.open_meenu{
+		margin:0;
+		text-align:right;
+		display: block;
+		width: 50px;
+	}
+	.menu a:after {
+		display: none;
+	}
+	.menu a:hover:after {
+		display: none;
+	}
+	.nav .tel {
+		margin-left: 120px;
+		width: 150px;
+	}
+	.open_meenu a {
+		width: 200px;
+	}
+	.header .menu_showw {
+		width: 110px;
+		padding-left: 0px;
+		top: 52px;
+		left: 71%;
+		background-color: #ceddec4a;
+		display: inline-flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}	
+	.header .menu_showw  li{
+		width: 100px;
+	}	
+	.open_meenu img{
+		width: 30px;
+	}
+	.menu li a {
+		font-size:14px;
+	}
+	.nav a{
+		width: 140px;
+	}
+	.tel{
+		font-size:15px;
+	}
+/**************************************************/
+	section{
+		width: 500px;
+	}
+	.offer {
+		width: 500px;
+		height:300px;
+	}
+	.container {
+		width: 500px;
+	}
+	section{
+		width: 500px;
+	}
+	.containerr .button_1 {
+		padding: 1px 0px;
+
+	}
+	.containerr .button_2 {
+		padding: 1px 0px;
+
+	}
+	.containerr .button_3 {
+		padding: 1px 0px;
+
+	}
+	.button_1   {
+	    transform: translate( -110%, -30%);
+	    width:150px;
+	}
+	.button_2
+	 {
+	    transform: translate( -10%, -30%);
+	    width:150px;
+	}
+	.button_3
+	 {
+	    transform: translate( 87%, -30%);
+	    width:150px;
+	}
+    button{
+    	width:150px;
+    }
+	.btn_k{
+		left: 65%;
+	}
+}
+@media all and (max-width: 500px) {
+	.tel{
+	    display: none;
+	}
+/**************************************************/
+	.container {
+		width: 400px;
+	}
+
+	.offer {
+		width: 400px;
+	}
+	section{
+		width: 400px;
+	}
+	.button_1   {
+	    transform: translate( -110%, -30%);
+	    width:100px;
+	}
+	.button_2 {
+	    transform: translate( -10%, -30%);
+	    width:100px;
+	}
+	.button_3{
+	    transform: translate( 87%, -30%);
+	    width:100px;
+	}
+	button {
+    	width:100px;
+    	font-size:13px;
+    }
+    .menu li a {
+		font-size:13px;
+	}
+	.containerr .button_1 {
+		padding: 1px 0px;
+	}
+	.containerr .button_2 {
+		padding: 1px 0px;
+	}
+	.containerr .button_3 {
+		padding: 1px 0px;
+
+	}
+	.container p{
+		font-size:15px;
+	}
+	.btn_k {
+		width: 120px;
+		left: 65%;
+	}
+	.btn_s {
+		width: 130px;
+	}
+}
+@media all and (max-width: 400px) {
+	.offer{
+		width:350px;
+	}
+	.about{
+		width: 350px;
+	}
+	.container {
+		width: 340px;
+		margin-left: auto;
+	}
+	.menu li a {
+		font-size:13px;
+	}
+	.logo{
+		margin-bottom: 0;
+    	padding-left: 10px;
+    	width: 150px;
+    	height: 32px;
+	}
+	.header .menu_showw {
+		width: 110px;
+		left: 68%;
+	}
+
+    .container p{
+		font-size:10px;
+	}	
+	.button a{
+		margin-top: 140px;
+		font-size: 10px;
+		padding: 17px 30px;
+		width: 150px;
+    }
+	.btn_s {
+		width: 100px;
+		font-size: 15px;
+	}
+	.btn_k {
+		width: 100px;
+		left: 70%;
+		font-size: 15px;
+	}
+}
+@media all and (max-width: 350px) {
+	
+	section{
+		width: 330px;
+	}
+	.offer {
+		width: 320px;
+		height:300px;
+	}
+	.about{
+		width: 320px;
+	}
+	.container {
+		width: 310px;
+	}
+	section{
+		width: 320px;
+	}
+	.tel {
+		padding-top: 10px;
+		font-size: 8px;
+	}
+	.open_meenu {
+		padding-right: 10px;
+		width: 18px;
+		height: 9px;
+	}
+	.header .menu_showw {
+		width: 110px;
+		left: 65%;
+		top: 50px;
+	}
+	.header .menu_showw li a {
+		font-size:13px;
+	}	
+	.button_1   {
+	    transform: translate( -110%, -30%);
+	    width:100px;
+	}
+	.button_2
+	 {
+	    transform: translate( -10%, -30%);
+	    width:100px;
+	}
+	.button_3
+	 {
+	    transform: translate( 90%, -30%);
+	    width:90px;
+	}
+	.btn_k {
+		width: 90px;
+		left: 70%;
+		font-size: 10px;
+	}
+	.btn_s {
+		width: 90px;
+		font-size: 10px;
+	}
+	button#btn_s.btn_s  {
+		width: 70px;
+    	height: 40px;
+	}
+	button#btn_k.btn_k {
+		width: 70px;
+    	height: 40px;
+	}
+	.container p{
+		font-size: 10px;
+	}
+ 
+}
